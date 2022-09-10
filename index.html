@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Stylesheet/style.css">
+    <title>Memories</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer></script>
+    <script src="./JS/app.js" defer></script>
+</head>
+
+<body>
+    <button class="create">Create</button>
+    <ul class="cards">
+
+    </ul>
+
+    <div class="delModal">
+        <div class="confirmDel">
+            <h4>Are you sure delete it?</h4>
+            <div class="buttons">
+                <button class="yes">Yes</button>
+                <button class="no">No</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="addModal">
+        <div class="addCard">
+            <form action="">
+                <div class="addName">
+                    <label for="name_input">Name:</label>
+                    <input type="text" id="name_input" name="name" required>
+                </div>
+                <div class="addSurname">
+                    <label for="surname_input">Surname:</label>
+                    <input type="text" id="surname_input" name="surname" required>
+                </div>
+                <div class="addGender">
+                    <input type="radio" id="male" name="gender" required>
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" required>
+                    <label for="female">Female</label>
+                </div>
+                <div class="addTitle">
+                    <label for="title_input">Title:</label>
+                    <input type="text" id="title_input" name="title" required>
+                </div>
+                <div class="addStory">
+                    <label for="story_input">Story:</label>
+                    <textarea name="story" id="story" cols="21" rows="4" required></textarea>
+                </div>
+                <input type="submit" class="ok" value="OK">
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>
